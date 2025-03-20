@@ -19,34 +19,13 @@ Ele automatiza o processo de verificação, garantindo que todos os produtos ate
 - **Apache POI** (para geração de relatórios Excel)
 
 ## 📂 Estrutura do Projeto
-```
 validador-produtos/
 │-- src/main/java/com/validador/     # Código-fonte principal
 │-- src/main/resources/               # Arquivos de configuração
 │-- pom.xml                            # Configuração do Maven
 │-- README.md                          # Documentação do projeto
-```
 
-## 🏗️ Como Configurar
-### 1️⃣ Clonar o repositório
-```sh
-git clone https://github.com/seu-repositorio/validador-produtos.git
-cd validador-produtos
-```
-
-### 2️⃣ Compilar e executar a aplicação
-```sh
-mvn spring-boot:run
-```
-A aplicação estará disponível em `http://localhost:8080`
-
-## 🎯 Como Usar
-### 1️⃣ Acessar a API no navegador ou via Postman
-```
-http://localhost:8080
-```
-
-### 2️⃣ Gerar relatório de validação
+### Gerar relatório de validação
 - Insira o **identificador do seller** na requisição.
 - Aguarde a análise automática.
 - Receba um relatório detalhado com os ajustes necessários.
@@ -58,14 +37,3 @@ O relatório gerado contém as seguintes colunas:
 |------------------------|-----|------------------|--------------|
 | Nome do SKU muito longo | 123456 | Celular XYZ | XYZ - 128GB |
 | Falta de categoria | 654321 | Notebook ABC | ABC - i7 16GB |
-
-## 🛠️ Problemas Conhecidos
-- Certifique-se de que o banco de dados está configurado corretamente.
-- Verifique se todas as dependências do projeto foram instaladas corretamente.
-
-## 🤝 Contribuição
-Pull requests são bem-vindos! Para grandes mudanças, abra uma issue primeiro para discutir o que você gostaria de alterar.
-
-## 📜 Licença
-Este projeto está licenciado sob a [MIT License](LICENSE).
-
