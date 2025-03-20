@@ -1,0 +1,71 @@
+# Validador de Produtos
+
+## 📌 Descrição
+O **Validador de Produtos** é uma aplicação desenvolvida para auxiliar **sellers** e **equipes de integração** na validação de produtos antes da sua implantação em marketplaces.
+Ele automatiza o processo de verificação, garantindo que todos os produtos atendam aos requisitos necessários para serem aprovados sem erros.
+
+## 🚀 Benefícios
+✅ **Automatiza a validação** dos produtos, reduzindo a necessidade de revisão manual.
+✅ **Gera relatórios detalhados** em formato Excel, destacando os ajustes necessários.
+✅ **Minimiza erros e retrabalho**, evitando recusas e inconsistências antes da publicação.
+✅ **Facilidade de uso**, permitindo que o seller insira seu identificador e obtenha o resultado rapidamente.
+✅ **Acelera a implantação dos produtos nos marketplaces**, garantindo conformidade com as exigências das plataformas.
+
+## 🛠️ Tecnologias Utilizadas
+- **Java 11**
+- **Spring Boot**
+- **API REST**
+- **Banco de Dados SQL**
+- **Apache POI** (para geração de relatórios Excel)
+
+## 📂 Estrutura do Projeto
+```
+validador-produtos/
+│-- src/main/java/com/validador/     # Código-fonte principal
+│-- src/main/resources/               # Arquivos de configuração
+│-- pom.xml                            # Configuração do Maven
+│-- README.md                          # Documentação do projeto
+```
+
+## 🏗️ Como Configurar
+### 1️⃣ Clonar o repositório
+```sh
+git clone https://github.com/seu-repositorio/validador-produtos.git
+cd validador-produtos
+```
+
+### 2️⃣ Compilar e executar a aplicação
+```sh
+mvn spring-boot:run
+```
+A aplicação estará disponível em `http://localhost:8080`
+
+## 🎯 Como Usar
+### 1️⃣ Acessar a API no navegador ou via Postman
+```
+http://localhost:8080
+```
+
+### 2️⃣ Gerar relatório de validação
+- Insira o **identificador do seller** na requisição.
+- Aguarde a análise automática.
+- Receba um relatório detalhado com os ajustes necessários.
+- Corrija os erros e reenvie os produtos ao marketplace.
+
+## 📊 Exemplo de Relatório
+O relatório gerado contém as seguintes colunas:
+| Descrição da Validação | SKU | Título do Produto | Título do SKU |
+|------------------------|-----|------------------|--------------|
+| Nome do SKU muito longo | 123456 | Celular XYZ | XYZ - 128GB |
+| Falta de categoria | 654321 | Notebook ABC | ABC - i7 16GB |
+
+## 🛠️ Problemas Conhecidos
+- Certifique-se de que o banco de dados está configurado corretamente.
+- Verifique se todas as dependências do projeto foram instaladas corretamente.
+
+## 🤝 Contribuição
+Pull requests são bem-vindos! Para grandes mudanças, abra uma issue primeiro para discutir o que você gostaria de alterar.
+
+## 📜 Licença
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
